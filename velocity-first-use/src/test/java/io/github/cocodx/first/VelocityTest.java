@@ -37,7 +37,7 @@ public class VelocityTest {
 
         Template template = Velocity.getTemplate("vms/01-quickstart.vm", "utf-8");
 
-        FileWriter fileWriter = new FileWriter("D:\\code\\IDEA_workspace\\velocity-parent\\velocity-first-use\\src\\main\\resources\\html\\01-quickstart.html");
+        FileWriter fileWriter = new FileWriter("D:\\code\\IDEA_workspace\\velocity-parent\\velocity-first-use\\src\\main\\resources\\html\\02-quickstart.html");
 
         template.merge(velocityContext,fileWriter);
 
