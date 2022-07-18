@@ -94,4 +94,27 @@ public class VelocityTest {
         fileWriter.close();
     }
 
+
+    @Test
+    public void test4() throws IOException {
+        //1. 设置velocity的资源加载器
+        Properties properties = new Properties();
+        properties.put("file.resource.loader.class","org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader");
+
+        Velocity.init(properties);
+
+        VelocityContext velocityContext = new VelocityContext();
+
+//        velocityContext.put("str","hello word velocity");
+//        velocityContext.put("now",new Date());
+
+        Template template = Velocity.getTemplate("vms/05-instructions-set.vm", "utf-8");
+
+        FileWriter fileWriter = new FileWriter("D:\\code\\IDEA_workspace\\velocity-parent\\velocity-first-use\\src\\main\\resources\\html\\05-instructions-set.html");
+
+        template.merge(velocityContext,fileWriter);
+
+        fileWriter.close();
+    }
+
 }
