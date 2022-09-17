@@ -1,0 +1,3 @@
+
+##如果是相对路径，会基于文件加载的路径去找，也是resources下
+#include("vms/01-quickstart.vm")

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+#set($language="java")
+
+## 字符串当做velocity的语句执行
+#evaluate($code)
+
+</body>
+</html>

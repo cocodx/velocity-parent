@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+#set($language="java")
+
+#if($language.equals("java"))
+    JAVA开发工程师
+#elseif($language.equals("php"))
+    PHP开发工程师
+#else
+    开发工程师
+#end
+
+#if($language.equals("java"))
+    JAVA开发工程师
+#end
+
+
+</body>
+</html>
